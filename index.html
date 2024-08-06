@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transformations and trasitions</title>
+    <style>
+        .container{
+            border: 1px solid;
+            width: 300px;
+            height: 300px;
+            padding-left: 80px;
+            margin-left: 500px;
+            margin-top: 200px;
+            background-color: rgb(207, 35, 212);
+            }
+        img{
+             padding: 55px;
+            transition: all 2s;
+         }
+         .a:hover ~img {
+            transform: translateY(200px);
+         }
+         .b:hover~img {
+            transform: rotatez(1000deg);
+         }
+         .c:hover ~img{
+            transform: scale(3);
+         }
+         .d:hover~img {
+            transform: skew(80deg,80deg);
+         }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    <button class="a">translate</button>
+    <button class="b">rotate</button>
+    <button class="c">scale</button>
+    <button class="d">skew</button><br>
+    <img src="../imgandsongs/star.jpg" alt="" width="100px">
+    </div>
+    
+</body>
+</html>
